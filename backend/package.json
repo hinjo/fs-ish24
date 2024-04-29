@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "render": "curl https://api.render.com/deploy/srv-conp7l8cmk4c73aa8qa0?key=S7WF-NhHjkQ",
     "build-frontend": "npm run --prefix ../frontend build && rm -Rf dist && cp -R ../frontend/dist .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

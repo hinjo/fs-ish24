@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.static(path.join(path.resolve(), "dist")))
 
 app.get("/api", (_request, response) => {
-  response.send({ hello: "World!" })
+  response.send({ hello: "InternetWorld!" })
   //hämta data från db om vi så vill
   // response.send("<html><head></head><body>Hello there</body></html>")
 })
