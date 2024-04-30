@@ -9,6 +9,7 @@ function App() {
   const [result, setResult] = useState("")
 
   useEffect(() => {
+    // fetch("http://localhost:3000/api") inte nödvändig längre pga inställning i vite.config.js
     fetch("/api")
       .then((response) => response.json())
       .then((result) => {
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <div>
-        Helloooo {result}
+        Häääääääälloooo {result}
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
