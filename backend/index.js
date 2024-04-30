@@ -23,7 +23,7 @@ app.get("/api", async (_request, response) => {
   // response.send({ hello: "InternetWorld!" })
   //hämta data från db om vi så vill
   const { rows } = await client.query("SELECT * FROM cities WHERE name = $1", [
-    "Goteborg"
+    "Göteborg"
   ])
 
   response.send(rows)
